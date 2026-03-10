@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Oindrila ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+color:red;
+overflow:hidden;
+background:radial-gradient(circle at center,#ff4d6d,#ff758f,#ff9aa2);
+}
+
+/* BIG HEART BACKGROUND */
+
+body::before{
+content:"❤";
+font-size:900px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+opacity:0.38;
+}
+
+/* glowing name */
+
+.glowName{
+position:fixed;
+top:10%;
+width:100%;
+text-align:center;
+font-size:60px;
+color:pink;
+text-shadow:0 0 10px #ff4d6d,0 0 20px #ff4d6d,0 0 40px #ff4d6d;
+opacity:0.75;
+letter-spacing:10px;
+}
+
+/* slides */
+
+.slide{
+display:none;
+height:100vh;
+width:100%;
+position:absolute;
+text-align:center;
+}
+
+.content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+max-width:70%;
+background:red(0,0,0,1.35);
+padding:40px;
+border-radius:20px;
+}
+
+h1{font-size:42px;margin-bottom:15px;}
+p{font-size:23px;line-height:1.7;}
+
+button{
+position:absolute;
+top:50%;
+background:rgba(255,255,255,0.3);
+border:none;
+color: purple;
+font-size:30px;
+padding:10px 20px;
+cursor:pointer;
+}
+
+#prev{left:10px;}
+#next{right:10px;}
+
+.finalButton{
+margin-top:20px;
+font-size:22px;
+padding:12px 30px;
+background:#ff4d6d;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* hearts explosion */
+
+.heart{
+position:fixed;
+font-size:22px;
+animation:fly 1sec linear forwards;
+}
+
+@keyframes fly{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-800px);opacity:0;}
+}
+
+/* timer */
+
+.timer{
+font-size:26px;
+margin-top:20px;
+color:#ffd6e0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glowName">OINDRILA</div>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Slide 1 -->
+
+<div class="slide">
+<div class="content">
+<h1>A Small Message</h1>
+<p id="typewriter"></p>
+</div>
+</div>
+
+<!-- Slide 2 -->
+
+<div class="slide">
+<div class="content">
+<h1>Oindrila</h1>
+<p>
+Your name feels like a gentle poem
+written quietly in the pages of my life.
+</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+
+<div class="slide">
+<div class="content">
+<h1>Your Smile</h1>
+<p>
+Your smile is the kind of light
+that makes ordinary days feel magical.
+</p>
+</div>
+</div>
+
+<!-- Slide 4 -->
+
+<div class="slide">
+<div class="content">
+<h1>Your Heart</h1>
+<p>
+Your kindness, warmth and beautiful soul
+make the world softer around you.
+</p>
+</div>
+</div>
+
+<!-- Slide 5 -->
+
+<div class="slide">
+<div class="content">
+<h1>Yesterday</h1>
+<p>
+Seeing your mood off yesterday
+felt like a small storm inside my heart.
+</p>
+</div>
+</div>
+
+<!-- Slide 6 -->
+
+<div class="slide">
+<div class="content">
+<h1>I Am Sorry</h1>
+<p>
+If my words ever hurt you,
+please know it was never my intention.
+</p>
+</div>
+</div>
+
+<!-- Slide 7 -->
+
+<div class="slide">
+<div class="content">
+<h1>Truth</h1>
+<p>
+The truth is simple —
+your happiness matters deeply to me.
+</p>
+</div>
+</div>
+
+<!-- Slide 8 -->
+
+<div class="slide">
+<div class="content">
+<h1>Oindrila ❤️</h1>
+<p>
+You are not just someone in my life.
+You are the calm in my chaos.
+</p>
+</div>
+</div>
+
+<!-- Slide 9 -->
+
+<div class="slide">
+<div class="content">
+<h1>A Promise</h1>
+<p>
+I promise to listen more carefully
+and understand your heart better.
+</p>
+</div>
+</div>
+
+<!-- Slide 10 -->
+
+<div class="slide">
+<div class="content">
+<h1>My Apology</h1>
+<p>
+I am truly sorry for yesterday.
+Your feelings will always matter to me.
+</p>
+</div>
+</div>
+
+<!-- Slide 11 -->
+
+<div class="slide">
+<div class="content">
+<h1>What You Are</h1>
+<p>
+You are my favorite person,
+my quiet comfort,
+and my happiest thought.
+</p>
+</div>
+</div>
+
+<!-- Slide 12 -->
+
+<div class="slide">
+<div class="content">
+<h1>Time With You</h1>
+<p>
+Every moment with you
+feels like a beautiful chapter.
+</p>
+
+<div class="timer" id="loveTimer"></div>
+
+</div>
+</div>
+
+<!-- Slide 13 -->
+
+<div class="slide">
+<div class="content">
+<h1>Thank You</h1>
+<p>
+Thank you for loving me
+even when I am imperfect.
+</p>
+</div>
+</div>
+
+<!-- Slide 14 -->
+
+<div class="slide">
+<div class="content">
+<h1>My Heart</h1>
+<p>
+All I truly want
+is to see your smile again.
+</p>
+</div>
+</div>
+
+<!-- Slide 15 -->
+
+<div class="slide">
+<div class="content">
+
+<h1>Will You Forgive Me?</h1>
+
+<p>
+I promise to care for your heart
+with more love and understanding.
+</p>
+
+<button class="finalButton" onclick="explodeHearts()">
+Will You Forgive Me?
+</button>
+
+</div>
+</div>
+
+<button id="prev">❮</button>
+<button id="next">❯</button>
+
+<script>
+
+/* slideshow */
+
+let slideIndex=0;
+let slides=document.getElementsByClassName("slide");
+
+function showSlide(n){
+
+if(n>=slides.length){slideIndex=0}
+if(n<0){slideIndex=slides.length-1}
+
+for(let i=0;i<slides.length;i++){
+slides[i].style.display="none";
+}
+
+slides[slideIndex].style.display="block";
+}
+
+document.getElementById("next").onclick=function(){
+slideIndex++;
+showSlide(slideIndex);
+}
+
+document.getElementById("prev").onclick=function(){
+slideIndex--;
+showSlide(slideIndex);
+}
+
+showSlide(slideIndex);
+
+/* typewriter */
+
+let text="Oindrila, sometimes the person we love the most is the person we fear hurting the most. When I saw your mood off yesterday, my heart felt heavy. This small page is just a gentle way of saying how deeply you mean to me.";
+
+let i=0;
+
+function typeWriter(){
+if(i<text.length){
+document.getElementById("typewriter").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typeWriter,45);
+}
+}
+
+typeWriter();
+
+/* love timer */
+
+let startDate=new Date("2026-02-01");
+
+function updateTimer(){
+
+let now=new Date();
+let diff=now-startDate;
+
+let days=Math.floor(diff/(1000*60*60*24));
+let hours=Math.floor((diff/(1000*60*60))%24);
+let minutes=Math.floor((diff/(1000*60))%60);
+
+document.getElementById("loveTimer").innerHTML=
+"We have been together for "+days+" days "+hours+" hours "+minutes+" minutes ❤️";
+
+}
+
+setInterval(updateTimer,1000);
+
+/* heart explosion */
+
+function explodeHearts(){
+
+for(let i=0;i<80;i++){
+
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.top="80%";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),3000);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
